@@ -11,11 +11,11 @@
     <div id="landing-page" class="landing-page">
       <h1>Welcome to the Chat App!</h1>
       <form id="name-form">
-        <label for="lina-name">Enter name for user1:</label>
-        <input type="text" id="lina-name" placeholder="Enter first usersname" required />
+        <label for="first-user">Enter name for User 1:</label>
+        <input type="text" id="first-user" placeholder="Enter User 1's name" required />
         <br /><br />
-        <label for="lisa-name">Enter name for user2:</label>
-        <input type="text" id="lisa-name" placeholder="Enter second users name" required />
+        <label for="second-user">Enter name for User 2:</label>
+        <input type="text" id="second-user" placeholder="Enter User 2's name" required />
         <br /><br />
         <button type="submit" id="start-chat-button" class="button">Start Chat</button>
       </form>
@@ -24,26 +24,16 @@
     <!-- Chat App -->
     <div id="chat-app" class="chat-container" style="display:none;">
       <div class="user">
-        <button class="button user-button active-person" id="Lina-selector">Lina</button>
-        <button class="button user-button" id="Lisa-selector">Lisa</button>
+        <button class="button user-button active-person" id="User1-selector">User 1</button>
+        <button class="button user-button" id="User2-selector">User 2</button>
       </div>
-      <h2 class="chat-header">Lisa writing...</h2>
 
-      <div class="chat-messages">
-        <div class="message blue-bg">
-          <div class="message-sender">Lina</div>
-          <div class="message-text">Hi Lisa, how is it going?</div>
-          <div class="message-timestamp">9:30 AM</div>
-        </div>
-        <div class="message gray-bg">
-          <div class="message-sender">Lisa</div>
-          <div class="message-text">Doing great!</div>
-          <div class="message-timestamp">10:35 AM</div>
-        </div>
-      </div>
+      <h2 class="chat-header">User 2 writing...</h2>
+
+      <div class="chat-messages"></div>
 
       <form class="chat-input-form">
-        <input type="text" class="chat-input" required placeholder="Type here, Lina..." />
+        <input type="text" class="chat-input" required placeholder="Type here" />
         <button type="submit" class="button send-button">Send</button>
       </form>
 
