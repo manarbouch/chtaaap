@@ -101,11 +101,11 @@ body {
 }
 
 .blue-bg {
-  background-color: rgb(213, 206, 188);
+  background-color:rgb(128, 128, 128); /* Unique color for User 1 */
 }
 
 .gray-bg {
-  background-color: #adb1b5f8;
+  background-color: rgb(213, 206, 188); /* Unique color for User 2 */
 }
 
 /* Chat Input Form Styling */
@@ -137,28 +137,25 @@ body {
 .clear-chat-button {
   display: block;
   margin: 2.5em auto;
-}
-
-.clear-chat-button {
-  background-color: rgb(213, 206, 188); /* Red color for a delete action */
-  color: white; /* White text */
-  border: none; /* Remove default borders */
-  padding: 10px 20px; /* Add some padding */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Text size */
-  font-weight: bold; /* Bold text */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+  background-color: #c62828; /* Red color for clear action */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .clear-chat-button:hover {
-  background-color: rgb(214, 213, 209); /* Darker red on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  background-color: #a31a1a;
+  transform: scale(1.05);
 }
 
 .clear-chat-button:active {
-  background-color: rgb(205, 197, 177); /* Even darker red on click */
-  transform: scale(0.95); /* Slightly shrink on click */
+  background-color: #861212;
+  transform: scale(0.95);
 }
 
 /* Landing Page */
@@ -188,6 +185,7 @@ body {
 .landing-page .button:hover {
   background-color: #a5a49e;
 }
+
 /* Styling for the landing page labels and input fields */
 label {
   font-size: 1.2em;
